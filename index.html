@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GithubFinder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .a1 {
+        flex-basis: 30%;
+        /* border-right: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        padding: 30px;
+        border-radius: 5px;
+        background: #ccc;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+
+      button {
+        background-color: #111;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .a2 {
+        flex-basis: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        height: 500px;
+        width: 800px;
+        /* background-color: #ccc; */
+
+        margin-right: 200px;
+      }
+
+      img {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+      }
+      .nav-bar {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: black;
+        color: white;
+      }
+      .fa-github {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <i class="fa-brands fa-github"></i>
+      <h1>GithubFinder</h1>
+    </nav>
+    <div class="container">
+      <aside class="a1">
+        <form>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            placeholder="Enter Login Id"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </aside>
+      <aside class="a2"></aside>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
